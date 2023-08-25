@@ -1,0 +1,113 @@
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+ .sec{
+    margin-right: 20px;
+    width: 40%;
+ }    
+
+footer h2{
+    position: relative;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer p{
+    color: rgb(91,90,90);
+    font-size: 18px;
+}
+.sci{
+     margin-top: 20px;
+     display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.sci li a:hover{
+    background: #999;
+}
+.about{
+ position: relative;   
+ width: 25%;
+}
+.about ul li{
+    list-style: none;
+}
+.about ul li a{
+    color: rgb(91, 90, 90);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 18px;
+}
+.about ul li a:hover{
+    color: #f00;
+
+}
+.cont{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+
+}
+.cont .info{
+    position: relative;
+
+}
+.cont .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.cont .info li span{
+    color: rgb(91,90,90);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.cont .info li a{
+    color: rgb(91,90,90);
+    text-decoration: none;
+}
+.cont .info li a:hover{
+    color: #f00;
+}
+.copy{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}

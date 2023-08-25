@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDDYSTORE</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Open+Sans:ital@1&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/09ca4b2d85.js" crossorigin="anonymous"></script>
+<link rel="icon" href="favicon.png.ico">
+</head>
+<body>
+      <div class="header">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Section</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+            </ul>
+            </nav>
+            <img src="cart.png" alt="" width="30px" height="30px">
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+           </div>  
+    </div>
+  </div>
+  <!-------------------------------------Account Page------------------------------>
+  <div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="image1.png" alt="" width="100%">
+            </div>
+            <div class="form-container">
+                <div class="form-btn">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="Indicator">
+                </div>
+                <form action="" id="Loginform">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Login</button>
+                    <a href="">Forget Password</a>
+                </form>
+                <form action="" id="Regform">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    
+    <!----------------------------- footer------------------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Downoad App for Android ios monile phone.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png" alt="">
+                        <img src="app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                   <img src="logo-white.png" alt="">
+                    <p>our purposr is to sustainably make the pleasure and benefits of sports accessible to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog</li>
+                        <li>Return policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                    <img src="Pti.png" alt="" class="fIcon" width="35px">
+                    <img src="pngwing.com (23).png" alt="" class="fIcon" width="30px">
+                    <img src="pinnn.png" alt="" class="fIcon" width="35px">
+                    <img src="Pfb.png" alt="" class="fIcon" width="35px">
+                   </div>
+                </div>   
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><b style="color:rgb(133, 218, 29)">Copyright:-2023 @Prasad Pattanayak</b></p>
+
+        </div>
+    </div>
+
+
+    <!--------------------js for toggle menu-------------->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle()
+        {
+            if(menuitems.style.maxHeight == "0px")
+            {
+                menuitems.style.maxHeight = "200px";
+            }
+            else{
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!--------------------------js for toggle form----------------->
+
+    <script>
+        var Loginform = document.getElementById("Loginform");
+        var Regform = document.getElementById("Regform");
+        var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            Regform.style.transform = "translateX(0px)";
+            Loginform.style.transform = "translateX(0px)";
+             Indicator.style.transform = "translateX(100px)";
+        }
+        
+        function login(){
+            Regform.style.transform = "translateX(300px)";
+            Loginform.style.transform = "translateX(300px)";
+             Indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+    
+</body>
+</html>
